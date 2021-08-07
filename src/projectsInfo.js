@@ -16,7 +16,7 @@ export const projectInfoAll = [
         id: 3,
         title: "React Portfolio Website",
         img:"assets/portfolio.PNG",
-        url:""
+        url:"https://portfolio-4ca26.web.app/"
     },
     {
         id: 4,
@@ -61,7 +61,7 @@ export const projectInfoReact = [ {
     id: 3,
     title: "React Portfolio Website",
     img:"assets/portfolio.PNG",
-    url:""
+    url:"https://portfolio-4ca26.web.app/"
     }
 ]
 export const projectInfoFrontEnd = [   {
