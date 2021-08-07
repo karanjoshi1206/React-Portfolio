@@ -1,0 +1,46 @@
+@import "./global.scss";
+.app {
+	height: 100vh;
+	.section {
+		width: 100%;
+		height: calc(100vh - 70px);
+		position: relative;
+		top: 70px;
+		scroll-behavior: smooth;
+
+		scroll-snap-type: y mandatory;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		> * {
+			width: 100vw;
+			height: calc(100vh - 70px);
+			scroll-snap-align: start;
+		}
+	}
+	.whatsappIcon {
+		> * {
+			font-size: 40px;
+			color: green;
+			position: fixed;
+			top: 50%;
+			right: 20px;
+			animation: bounce 2s infinite;
+			@keyframes bounce {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.2);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+		}
+		@include mobile {
+			font-size: 35px;
+		}
+	}
+}
